@@ -1,15 +1,14 @@
-const output = document.getElementById("output");
+/*const output = document.getElementById("output");
 
 
-//Filtering
+//date validation
 
 const arrival = document.getElementById("arrivalfield");
 const departure = document.getElementById("departurefield");
 
-const peopleInput = parseFloat(document.getElementById("peopleinput").value);
-const suitcaseInput = parseFloat(document.getElementById("suitcaseinput").value);
+//const numberInputField = parseFloat(document.getElementById("peopleinput").value);
+//const suitcaseInput = parseFloat(document.getElementById("suitcaseinput").value);
 
-const form = document.getElementById("form");
 
 const error = document.getElementById("error");
 
@@ -23,41 +22,20 @@ function validDates(arrivalfield, departurefield) {
     }
 }
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+/*
 
-    error.innerHTML = "";
+function calculateDays (arrivalfield , departurefield){
 
-    let template = "";
-
-for (const car of carlist) {
-    
-    template = `
-
-    <div class="cards">
-        <div>
-            <img src="${car.image}" alt="budget-car">
-        </div>
-        <h2>${car.modelName}</h2>
-         <div>
-            <p>Category: ${car.category}</p>
-            <p>People: ${car.people}</p>
-            <p> Suitcases: ${car.suitcases}</p>
-            <p>Comfort: ${car.comfort}</p>
-        </div>
-        <div class="price-box">
-            <p>${car.price} DKK</p>
-             <button>Book Now</button>
-          </div>
-    </div>`
-    output.insertAdjacentHTML (`beforeend`, template)
-    
-    if (peopleInput <= 4 & suitcaseInput <= 0) {
-        output.insertAdjacentHTML (`beforeend`, template);
-
-
-
-    }
+    const timediff = departure.getTime() - arrivaldate.getTime();
+    const diffindays = timediff / (1000 * 3600 * 24) + 1;
+    return diffindays
 }
-})
+
+function calcRentalDays(days){
+    const pricePerDay = 100;
+    const totalPrice = pricePerDay * days;
+    return totalPrice
+}
+
+*/
 

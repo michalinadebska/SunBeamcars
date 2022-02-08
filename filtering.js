@@ -47,7 +47,7 @@ filteringForm.addEventListener("submit", function (e) {
 	
 	
 	/*const suitcasesInputField = document.getElementById("num-suitcases");
-	const suitcasesInput = Number(suitcasesInputField.value) */ //MOT NEEDED BECAUSE IF DOESNT WORK
+	const suitcasesInput = Number(suitcasesInputField.value) */ //NOT NEEDED BECAUSE IT DOESNT WORK
 
 	// Create an object list of elements with the class "cars" attached
 	let outputString = "";
@@ -81,3 +81,93 @@ filteringForm.addEventListener("submit", function (e) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//date validation  
+//IT REALLY USED TO WORK I PROMISE  :)))))   !!!!!!!!!!!!
+
+
+
+
+
+
+
+//const numberInputField = parseFloat(document.getElementById("peopleinput").value);
+//const suitcaseInput = parseFloat(document.getElementById("suitcaseinput").value);
+
+
+
+
+/*function validDates(arrivaldate, departuredate) {
+    const arrival = new Date(arrivaldate);
+    const departure = new Date(departuredate);
+    if (arrival > departure) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
+
+
+const arrival = document.getElementById("arrivalfield");
+const departure = document.getElementById("departurefield");
+const output = document.getElementById("output");
+const error = document.getElementById("error");
+
+filteringForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    error.innerHTML = "";
+    const datesValid = validDates(arrival.value, departure.value);
+    if(datesValid) {
+
+
+
+
+        // If true, price calculation must take place here
+
+/*
+
+function calculateDays(arrivaldate, departuredate){
+    const arrival = new Date(arrivaldate);
+    const departure = new Date(departuredate);
+    const timediff = departure.getTime() - arrival.getTime();
+    const diffindays = timediff / (1000 * 3600 * 24) + 1;
+    return diffindays;
+}
+
+function calculatePrice(days) {
+    const priceprday = 150;
+    const totalprice = priceprday * days;
+    return totalprice;
+}
+
+
+
+
+
+
+
+        //const days = calculateDays(arrival.value, departure.value);
+       // const price = calculatePrice(days);
+
+    } else {
+        error.innerHTML = "The day of departure must be later than the day of arrival"
+    }
+})
+
+*/
