@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img class="logo-icon" src="./assets/sunbeamcars.svg" />
+
+      </div>
+      <div class="login">
+        <img class="login-icon" src="./assets/login.png" />
+        <h4>Login</h4>
+      </div>
+    </nav>
+    <header>
+      <div class="herobox">
+        <div class="form-container">
+          <h2 class="form-title">Find the car that suits you</h2>
+          <form class="form" id="form">
+            <div class="first-col">
+              <label for="date-start">Pick up date:</label>
+              <input type="date" id="date-start" name="pick-up-date" />
+              <label for="num-persons">Number of persons:</label>
+              <input
+                type="number"
+                id="num-persons"
+                name="number-of persons"
+                placeholder="Number of persons..."
+                required
+              />
+            </div>
+            <div class="second-col">
+              <label for="date-end">Hand in date:</label>
+              <input type="date" id="date-end" name="hand-in-date" required />
+              <label for="num-suitcases">Number of suitcases:</label>
+              <select name="suitcases" id="num-suitcases" required>
+                <option value="oneBag">Only one bag</option>
+                <option value="twoBags">Two bags</option>
+                <option value="threeBags">Three bags</option>
+                <option value="moreBags">More bags</option>
+              </select>
+            </div>
+            <button type="submit" class="search-btn" id="search-btn">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main id="output"> 
+      <p id="error"></p>
+      <section id="cars">
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+    <script src="data.js"></script>
+    <script src="filtering.js"></script>
+  </body>
+</html>
